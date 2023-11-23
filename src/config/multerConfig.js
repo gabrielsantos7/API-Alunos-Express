@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 export default {
   fileFilter: (req, file, cb) => {
     if (file.mimetype !== 'image/jpeg' && file.mimetype !== 'image/png') {
-      return cb(new multer.MulterError('File is not an image'));
+      return cb(new multer.MulterError('The uploaded file is not an image'));
     }
     return cb(null, true);
   },

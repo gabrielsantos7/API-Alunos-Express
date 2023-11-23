@@ -27,5 +27,6 @@ module.exports = {
     'padded-blocks': 'off', // Não deixa colocar espaço entre blocos de código
     'no-unused-vars': 'warn', // Variáveis que não estão sendo usadas
     'import/no-extraneous-dependencies': 'off', // Importações que não estão sendo reconhecidas
+    camelcase: 'off', // Variáveis só podem ser criadas com o padrão camelCase
   },
 };
