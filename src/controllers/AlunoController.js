@@ -17,7 +17,7 @@ class AlunoController {
         ['id', 'DESC'],
         [Foto, 'id', 'DESC'],
       ],
-      include: { model: Foto, attributes: ['originalname', 'filename'] },
+      include: { model: Foto, attributes: ['originalname', 'filename', 'url'] },
     });
     res.json(alunos);
   }
@@ -43,7 +43,7 @@ class AlunoController {
           ['id', 'DESC'],
           [Foto, 'id', 'DESC'],
         ],
-        include: { model: Foto, attributes: ['originalname', 'filename'] },
+        include: { model: Foto, attributes: ['originalname', 'filename', 'url'] },
       });
       if (!aluno) {
         return res.status(400).json({ error: 'Aluno not found' });
